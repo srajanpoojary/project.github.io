@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="webpage.css">
+        <title> NITTE UNIVERSITY</title>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <title> NITTE UNIVERSITY</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-image: url("nitte1.jpg");
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    image-resolution: 0.5;       
+        }
+        .dropbtn {
+          background-color: transparent;
+          color: white;
+          padding: 16px 722px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: #333;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block; 
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: center;
+          background-color: #333;
+          min-width: 200px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(96, 201, 207, 0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown a:hover {background-color: rgb(103, 231, 235)}
+        
+        
+                .show {display: block;}
+        
+                hr{
+            width: 700px;
+            margin: 10px auto;
+        }
+        
+                .header {
+                    text-align: center;
+                    padding: 10px;
+                    font-style: bold;
+                    color: #040000;
+                    padding: 20px;
+                }
+                .logo {
+                    width: 100px; 
+                }
+                .navbar {
+                    overflow: hidden;
+                }
+                .navbar a {
+                    float: center;
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 20px 20px;
+                    text-decoration: none;
+                }
+                .navbar a:hover {
+                    background-color: #333;
+                }
+                .footer {
+                    background-color: #333;
+                    color: #fff;
+                    text-align: center;
+                    padding: 1em 0;
+                }
+                .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 50px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+        }
+        
+        .fa:hover {
+            opacity: 0.5;
+        }
+        
+        .fa-facebook {
+          background: #3B5998;
+          color: white;
+        }
+        
+        .fa-twitter {
+          background: #55ACEE;
+          color: white;
+        }
+        
+        .fa-instagram {
+          background: pink;
+          color: black;
+        }
+            </style>
+        </head>
+    </head>
+
+
+    <body>
+      <div class="header">
+          <img src="l.png" alt="College Logo" class="logo">
+          <h1>NITTE UNIVERSITY</h1>
+          <h3>(DEEMED TO BE UNIVERSITY)</h3>
+          <h4>Address: Nitte, SH1, Karkala, Karnataka 574110</h4><hr>
+      </div>
+      <div class="navbar">
+          <a href="#home">Home</a>
+           
+            <body style="background-color:white;">
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Department</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="computerscience.html"> Computer Science Engineering </a>
+                  <a href="ise.html"> Information Science & Engineering </a>
+                
+                </div>
+              </div>
+              
+              <script>
+             
+              function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+              }
+              
+              
+              window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                    }
+                  }
+                }
+              }
+              </script> </body>
+          <a href="https://apply.nitte.edu.in/`">Admissions</a>
+          <a href="contact.html">Contact</a><br>
+      </div>
+      <div>
+  <center>
+  <a href="https://www.facebook.com/NITTEedu/" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/aboutnitte/status/1643841857087225856" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com/nitteeducation/?hl=en" class="fa fa-instagram"></a>
+  </center>
+  </div>
+  </body>
+  </html>
